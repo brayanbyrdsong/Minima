@@ -1,0 +1,100 @@
+<template name="home">
+  <section white>
+    <div class="flex t-list align-center">
+      <div class="col">
+        <h1 class="t-hidden">Minima</h1>
+        <h1 class="d-hidden t-flex align-center">
+          <img src="./www/assets/minima.png" class="d-hidden" height="64px">
+          <span>Minima</span>
+        </h1>
+        <p>
+          Quickly build responsive modern designs with regular elements, no need to memorize class names. 
+        </p>
+      </div>
+      <div class="col text-center t-hidden">
+        <img src="./www/assets/minima.png">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex t-hidden">
+      <h6 class="col gutter">
+        <a href="#/documentation">Documentation</a>
+      </h6>
+      <h6 class="col gutter">
+        <a href="#/examples">Examples</a>
+      </h6>
+      <h6 class="col gutter">
+        <a href="#/campaign">Campaign</a>
+      </h6>
+    </div>
+    <div class="d-flex t-hidden">
+      <p class="col gutter align-center">
+        Minima's Documentation is very simple and will have you working on new webistes in a jiff.
+      </p>
+      <p class="col gutter align-center">
+        View existing Minima projects to get inspiration!
+      </p>
+      <p class="col gutter align-center">
+        Submit your Minima websites for a chance to win $5.
+      </p>
+    </div>
+    
+    <div class="t-center list d-hidden">
+      <h6><a href="#/documentation">Documentation</a></h6>
+      <p class="text-center align-center center">
+        Minima's Documentation is very simple and will have you working on new webistes in a jiff.
+      </p>
+      <h6><a href="#/examples">Examples</a></h6>
+      <p class="text-center align-center center">
+        View existing Minima projects to get inspiration!
+      </p>
+      <h6><a href="#/campaign">Campaign</a></h6>
+      <p class="text-center align-center center">
+        Submit your Minima websites for a chance to win $5.
+      </p>
+    </div>
+  </section>
+  <section class="m-hidden">
+    <h4 class="text-center">Import into your projects</h4>
+    <div class="space-even">
+      <button onclick="copy('link')" tabindex="0">
+        HTML link <h6><b>&lt;link/&gt;</b></h6>
+      </button>
+      <button onclick="copy('import')" tabindex="0">
+        CSS import <h6><b>@import</b></h6>
+      </button>
+      <button onclick="copy('code')" tabindex="0">
+        JS import <h6><b>&lt;script&gt;</b></h6>
+      </button>
+    </div>
+    <i class="right">Click to copy to clipboard</i>
+  </section>
+
+  <section class="aside-left d-fixed t-hidden text-center">
+    <h4>Whats new?</h4>
+    <a href="https://www.facebook.com/MinimaStyles" target="_blank">Facebook</a>
+    <a href="#/campaign">Campaign</a>
+  </section>
+
+  <section class="aside-right d-fixed text-center">
+    <h5><a onclick="setTheme(0)+setVersion(2)">Reset</a></h5>
+    <h4>Themes</h4>
+    <a onclick="setTheme(0)">Default</a>
+    <a onclick="setTheme(1)">Dark</a>
+    <a onclick="setTheme(2)">Sharp</a>
+    <a onclick="setTheme(3)">Minima</a>
+    <h4>Versions</h4>
+    <a onclick="setVersion(2)">Minima 2</a>
+    <a onclick="setVersion(1)">Minima 1</a>
+  </section>
+  
+  <style>
+    html{
+      background: url("./www/assets/bg.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>
+</template>

@@ -1,0 +1,25 @@
+@keyframes minima-mobile{
+  0%{
+    top: -50px;
+  }
+  70%{
+    top: 20px;
+  }
+  100%{
+    top: 12.5px;
+  }
+}
+
+@keyframes minima-mobile-active{
+  0%{
+    padding: 10px;
+    opacity: .6;
+    transform: translateX(-10px) translateY(-12.5px);
+  }
+  100%{
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);    
+  }
+}

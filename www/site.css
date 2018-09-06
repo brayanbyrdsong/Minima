@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+
+#minima-view{
+  padding: 0;
+}
+
+.minima-view{
+  padding: 0;
+}
+
+.loading{
+  display: none;
+}
+
+:root{
+  --accent: #FCD68C;
+  --light: #AAD2EC;
+  --dark: #AAC0EC;
+}
+
+html{
+  min-height: 100%;
+}
+
+body{
+  margin-bottom: 52px;
+}
+
+img[src="./www/assets/minima-logo.png"]{
+  margin-top: 10px;
+}
+
+img[src="www/minima.png"]:not([height]){
+  width: 60%;
+  height: 60%;
+}
+
+.todo-img{
+  max-height: 500px;
+  max-width: 50%;
+  border-radius: var(--minima-radius);
+}
+@media screen and (max-width: 800px){
+  .todo-img{
+    margin: auto;
+  }
+}
+
+.gallery img{
+  border-radius: var(--minima-radius);
+  height: 100px;
+}
+
+.gallery img.active{
+  height: auto;
+}
+
+pre{
+  position: relative;
+  background-color: var(--light-shadow);
+  overflow: hidden;
+  padding-left: 15px;
+  height: 30px;
+  width: 120px;
+  border-radius: var(--minima-radius);
+  box-shadow: 0 1px 1px 0 var(--shadow);
+  cursor: pointer;
+  transition: .5s;
+}
+
+pre:hover{
+  box-shadow: 0 3px 5px 0 var(--heavy-shadow);
+}
+
+pre:before{
+  content: "Code";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+pre code{
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 20px;
+  opacity: 0;
+  height: 0;
+  font-family: 'Cousine', monospace;
+}
+
+pre.active{
+  border-radius: var(--minima-radius);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 10px 10px 0 10px;
+  margin: 10px 25px;
+  height: auto;
+  width: auto;
+  overflow-x: auto;
+}
+
+pre.active:before{
+  font-weight: bold;
+}
+
+pre.active code{
+  opacity: 1;
+  height: auto;
+}
+
+.example div{
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: var(--minima-radius);
+  border: 2px solid var(--light);
+}
+
+.example-2 div{
+  height: 50px;
+  background-color: var(--dark);
+  border: 2px solid var(--light);
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--shadow);
+}
+
+.example-2 div:before{
+  content: ".col";
+}
+
+@media screen and (min-width: 800px){
+  pre.active{
+    width: fit-content;
+  }
+}
+
+.note{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: var(--minima-radius);
+  padding: 2px 8px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.note a{
+  display: block;
+  text-transform: capitalize;  
+}

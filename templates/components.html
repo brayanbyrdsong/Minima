@@ -1,0 +1,138 @@
+<template name="components">
+  <h2>Components</h2>
+
+  <code>docs-aside</code>
+
+  <section>
+    <h4>Dropdown</h4>
+    <pre>
+      <code snippet="dropdown"></code>
+    </pre>
+    <div class="flex align-center d-reverse t-list">
+      <div class="d-col text-center">
+        <div id="dd" class="dropdown" onclick="Minima.toggleDropdown('dd')">
+          <label>Select an Option</label>
+          <a>One</a>
+          <a>Two</a>
+          <a>Three</a>
+          <a>Four</a>
+        </div>
+      </div>
+      <p class="d-col">
+        <b>Minima.toggleDropdown(</b><i> id </i><b>)</b><br>
+        Parameters: <i>id</i><br>
+        Open / Close dropdown
+      </p>
+    </div>
+    <hr>
+    <h4>Side Nav</h4>
+    <pre>
+      <code snippet="sideNav"></code>
+    </pre>
+    <nav id="nav" class="side">
+      <a>One</a>
+      <a>Two</a>
+      <a>Three</a>
+      <a>Four</a>
+    </nav>
+    <div class="flex align-center d-reverse t-list">
+      <div class="d-col text-center">
+        <button onclick="Minima.toggleNav('nav')">Open Side Nav</button>
+      </div>
+      <p class="d-col">
+        <b>Minima.toggleNav(</b><i> id </i><b>)</b><br>
+        Parameters: <i>id</i><br>
+        Open / Close nav.side
+      </p>
+    </div>
+    <hr>
+    <h4>Tabs</h4>
+    <pre>
+      <code snippet="tabs"></code>
+    </pre>
+    <div class="flex align-center d-reverse t-list">
+      <section class="d-col" white>
+        <div class="tabs gutter" onclick="Minima.toggleTab(event)">
+          <a class="active">One</a>
+          <a>Two</a>
+          <a>Three</a>
+        </div>
+        <div class="tabs gutter" onclick="Minima.toggleTab(event)">
+          <button class="active">One</button>
+          <button>Two</button>
+          <button>Three</button>
+        </div>
+      </section>
+      <p class="d-col">
+        <b>Minima.toggleTab(</b><i> event </i><b>)</b><br>
+        Parameters: <i>event</i><br>
+        Activate tab
+      </p>
+    </div>
+    <hr>
+    <h4>Button Tray</h4>
+    <pre>
+      <code snippet="buttonTray"></code>
+    </pre>
+    <div class="flex align-center d-reverse t-list">
+      <div class="d-col text-center">
+        <form>
+          <label for>Example Form</label>
+          <input placeholder="login">
+          <div class="button-tray right">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+      <p class="d-col">
+        <i>.button-tray</i> class
+        <br>Use on <b>forms</b> to create floating buttons that pop.
+      </p>
+    </div>
+    <hr>
+    <h4>Ripple</h4>
+    <div class="flex align-center d-reverse t-list">
+      <div class="d-col text-center space-even t-list">
+        <button class="ripple">Click Me</button><br>
+        <a class="ripple d-hidden">Click Me</a>
+        <a class="ripple t-hidden">Hold Me</a>
+      </div>
+      <p class="d-col">
+        <i>.ripple</i> class
+      </p>
+    </div>
+    <hr>
+    <h4>Menu</h4>
+    <div class="flex align-center d-reverse t-list">
+      <div class="d-col text-center">
+        <div class="menu" onclick="Minima.activate(event)">
+          <a>one</a>
+          <a>two</a>
+          <a>three</a>
+        </div>
+      </div>
+      <p class="d-col">
+        <i>.menu</i> class
+      </p>
+    </div>
+    <hr>
+    <h4>Mobile</h4>
+    <pre>
+      <code snippet="mobile"></code>
+    </pre>
+    <p>
+      <i>.mobile</i> class 
+      <br>Creates a menu for mobile devices. 
+      <br>Creates a modern tabs look for desktop.
+      <br><br><i>Use the <b>Minima JS</b> to init the button, or give it the .active class to open.</i>
+    </p>
+    <hr>
+    <h4>Aside</h4>
+      <p>
+        <i>.aside-left</i> or <i>.aside-right</i> classes
+        <br>Use on <b>sections</b> to position it onto the side of the page. Useful for navigation or advertisements. 
+        <br><br><i>The aside class only works on desktop devices, on mobile devices the section will render as a normal section.</i>
+      </p>
+    </div>
+  </section>    
+</template>

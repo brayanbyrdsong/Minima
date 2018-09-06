@@ -1,0 +1,182 @@
+@media screen and (min-width: 1000px){
+/* containers */
+
+.d-right, .d-left, .d-center, .d-space-around,
+.d-space-between, .d-space-even, .d-flex{
+  display: flex;
+}
+
+.d-right{
+  justify-content: flex-end;
+}
+
+.d-left{
+  justify-content: flex-start;
+}
+
+.d-center{
+  justify-content: center;
+}
+
+.d-space-around{
+  justify-content: space-around;
+}
+
+.d-space-between{
+  justify-content: space-between;
+}
+
+.d-space-even{
+  justify-content: space-evenly;
+}
+
+/*  */
+
+.d-reverse{
+  flex-direction: row-reverse;
+}
+
+.d-list{
+  flex-direction: column;        
+}
+
+.d-list.d-reverse{
+  flex-direction: column-reverse;
+}
+
+.d-text-center{
+  text-align: center;
+}
+
+.d-align-center{
+  align-items: center;
+}
+
+.d-col{
+  width: 100%;
+}
+
+.d-hidden{
+  display: none;
+}
+
+.d-gutter{
+  margin: 3px 6px;
+}
+
+.d-wrap{
+  flex-wrap: wrap;
+}
+
+.d-fixed{
+  position: fixed;
+}
+
+.d-button-tray{
+  position: absolute;
+  margin-top: -10px;
+}
+
+.d-button-tray.d-right{
+  right: 10px;
+}
+
+/* components */
+
+/* tab-select */
+.d-tab-select a:not(:first-child){
+  border-left: 2px solid var(--light-shadow);
+  padding: 0 8px;
+}
+.d-tab-select a:first-child{
+  padding: 0 8px;
+}
+.d-tab-select a:not(.active), .d-tab-select:hover a{
+  background-color: transparent;
+  border-radius: 0;
+}
+.d-tab-select a:hover, .d-tab-select a:active, .d-tab-select a:focus, 
+.d-tab-select:not(:hover) a.active{
+  border-left: 2px solid transparent;
+  padding: 6px 12px;
+  margin: -10px;
+  z-index: 1;
+  background-color: #f2f2f2;
+  position: relative;
+  border-radius: var(--minima-radius);    
+}
+
+/* menu */
+.d-menu{
+  width: 50px;
+  height: 50px;
+  background-color: #f7f7f7;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px 0 var(--shadow);
+  top: 12.5px;
+  right: 25px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  cursor: pointer;
+  animation: minima-mobile .3s;    
+}
+
+.d-menu::before{
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  line-height: 50px;
+  content: "Menu";
+  color: var(--minima-link);
+}
+
+.d-menu:focus, .d-menu:hover, .d-menu:active{
+  outline: none;
+  box-shadow: 0 3px 5px 0 var(--shadow);
+}
+
+.d-menu.active{
+  background-color: white;
+  min-width: 200px;
+  height: auto;
+  line-height: 28px;
+  border-radius: var(--minima-radius);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  right: 25px;
+  animation: minima-mobile-active .3s;
+}
+
+.d-menu.active::before{
+  content: "x";
+  right: -5px;
+  top: -5px;
+  border-radius: 100%;
+  background-color: #f2f2f2;
+  box-shadow: 0 1px 1px 0 var(--shadow);
+  color: rgba(0,0,0,0.6);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.d-menu a{
+  display: none;
+  width: -120px;
+  margin: 10px auto;
+  opacity: 0;
+}
+
+.d-menu.active a{
+  display: block;
+  opacity: 1;
+  width: auto;
+}
+}

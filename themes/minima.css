@@ -1,0 +1,70 @@
+*{
+  font-weight: bold;  
+}
+
+html{
+  background-color: var(--dark);
+}
+
+body{
+  background: var(--heavy-shadow);  
+}
+
+body > h1, body > h2, body > h3,
+body > h4, body > h5, body > h6{
+  color: white;
+}
+
+#minima-view > h1, #minima-view > h2, #minima-view > h3,
+#minima-view > h4, #minima-view > h5, #minima-view > h6{
+  color: white;
+}
+
+b{
+  font-weight: bolder;
+}
+
+section{
+  background-color: var(--light);
+  animation: minima-card .6s;
+}
+
+section:not([white]) p{
+  background: rgba(255,255,255,.6);
+}
+
+pre{
+  background-color: white;
+}
+
+.aside-left, .aside-right{
+  background-color: white;
+}
+
+[white]{
+  background-color: white;
+}
+
+@keyframes minima-card{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.02);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.example div{
+  background-color: var(--dark);
+  border: 4px solid var(--accent);
+  border-radius: var(--minima-radius);  
+}
+
+.example-2 div{
+  background-color: var(--dark);
+  border: 4px solid var(--accent);
+  border-radius: var(--minima-radius);
+}

@@ -1,0 +1,7 @@
+label[for]{
+  display: block;
+}
+
+textarea[non-resizable]{
+  resize: none;
+}

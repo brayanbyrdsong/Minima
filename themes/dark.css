@@ -1,0 +1,150 @@
+/*variables*/
+:root{
+  color: rgba(255,255,255,0.8);
+  --minima-bg: #404040;
+  --minima-dark: #666;
+  --minima-darker: #595959;
+  --minima-light: #737373;
+  --minima-white: #e6e6e6;
+  --light: #446d88;
+  --dark: #445b88;
+}
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;  
+  color: rgba(255,255,255,0.8);  
+}
+
+html{
+  background-color: var(--minima-bg);
+  color: rgba(255,255,255,0.8);  
+}
+
+body{
+  background-color: var(--minima-dark);
+  color: rgba(255,255,255,0.8);
+}
+
+section{
+  background-color: var(--minima-darker);
+}
+
+p, form, table{
+  background: linear-gradient(90deg, var(--minima-light) 0%, #7a7a7a 50%, var(--minima-light) 100%);
+}
+
+table{
+  border: none;
+}
+
+th{
+  background-color: var(--minima-dark);
+  border: none;
+}
+
+button{
+  background-color: #3d3d3d;
+}
+
+a:hover, a:focus, a:active, a.active{
+  background-color: rgba(255,255,255,0.1);
+}
+
+nav{
+  background-color: var(--minima-light);
+}
+
+body nav:first-of-type{
+  background-color: var(--minima-darker);
+}
+
+.dropdown{
+  background-color: var(--minima-darker);
+  border-color: var(--minima-white);  
+}
+
+.dropdown::after{
+  background: var(--minima-light);
+  color: var(--minima-white);
+  border: 2px solid var(--minima-white);
+}
+
+.dropdown-menu{
+  background-color: var(--minima-darker);
+}
+
+nav.side{
+  background-color: var(--minima-dark);
+}
+
+.nav-bg{
+  background-color: var(--heavy-shadow);
+}
+
+hr{
+  border-color: rgba(255,255,255,0.1);
+}
+
+ol > li:before {
+  background-color: var(--minima-light);
+  color: var(--minima-white);
+}
+
+input{
+  background-color: var(--minima-dark);
+  color: var(--minima-white);
+}
+
+input::-webkit-input-placeholder{
+  color: var(--minima-white);
+}
+
+pre{
+  background-color: var(--minima-light);
+}
+
+.ripple:after {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 800px){
+  .mobile{
+    background-color: var(--minima-light);
+  }
+  .mobile::before{
+    color: white;
+  }
+  .mobile.active{
+    background-color: var(--minima-white);
+  }
+  .mobile.active::before{
+    color: white;
+    background-color: var(--minima-dark);
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1000px){
+  .mobile a:not(:first-child){
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 0 8px;
+  }
+  .mobile a:first-child{
+    padding: 0 8px;
+  }
+  .mobile a{
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .mobile a:hover, .mobile a:active, .mobile a:focus, 
+  .mobile:not(:hover) a.active{
+    padding: 6px 12px;
+    margin: -10px;
+    z-index: 1;
+    position: relative;
+    border-left: 2px solid transparent;
+    background-color: var(--minima-light);
+    border-radius: var(--minima-radius);    
+  }
+}

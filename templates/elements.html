@@ -1,0 +1,141 @@
+<template name="elements">
+  <h2>Elements</h2>
+
+  <code>docs-aside</code>
+
+  <section>
+    <h6>Nav</h6>
+    <nav>
+      <div class="space-between">
+        <h5>Example</h5>
+        <div>
+          <a class="ripple">Home</a>
+        </div>
+      </div>
+    </nav>
+    <pre>
+      <code snippet="nav"></code>
+    </pre>
+    <p>The first nav in the body will render as a header, creating a standout consitant nav bar at the top of the page. With Minima JS You can use the <i>.fixed</i> class to keep the navbar at the top of the page.</p>
+  </section>
+  <section>
+    <h6>Section</h6>
+    <p>Sections are automatically rendered as cards and are useful for making page content pop. You can use multiple sections on one page or use one section with hr tags to seperate the data.</p>
+    <pre>
+      <code snippet="section"></code>
+    </pre>
+  </section>
+  <section>
+    <h6>Paragraph</h6>
+    <p>Paragraphs are also rendered as cards with the data you would like to display</p>
+
+    <hr>
+
+    <h6>Button</h6>
+    <button>Click Me</button>
+    <form>
+      <h5>Button Tray</h5>
+      <div class="button-tray right">
+        <button>Floating Button</button>
+      </div>
+    </form>
+
+    <hr>
+
+    <h6>Input</h6>
+    <input placeholder="Email">
+
+    <hr>
+
+    <h6>Progress</h6>
+    <progress value="75" max="100"></progress>
+
+    <hr>
+
+    <h6>Form</h6>
+    <form>
+      <label for>Email</label>
+      <input placeholder="Email">
+      <label for>Password</label>
+      <input placeholder="Password" type="password">
+      <div class="button-tray right">
+        <button>Submit</button>
+      </div>
+    </form>
+
+    <hr>
+
+    <h6>Dialog</h6>
+    <button onclick="Minima.toggleDialog('dialog')">Open Dialog</button>
+    <dialog id="dialog" onclick="Minima.toggleDialog('dialog')">
+      <h3>Dialog element example</h3>
+      <p>Click me to close me</p>
+    </dialog>
+    <pre>
+      <code snippet="dialog"></code>
+    </pre>
+    <p>The dialog element sometimes known as a modal creates a pop-out that can hold large amounts of data. Check out w3schools <a href="https://www.w3schools.com/tags/tag_dialog.asp">example</a> to learn how to open/close the element.</p>
+
+    <hr>
+
+    <h6>Table</h6>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+    <p>
+      Table elements are rendered as cards.
+    </p>
+
+    <hr>
+
+    <h6>Ordered List</h6>
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ol>
+
+    <hr>
+
+    <h6>Unordered List</h6>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+  </section>
+</template>

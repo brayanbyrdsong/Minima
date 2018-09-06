@@ -1,0 +1,54 @@
+<template name="documentation">
+  <h2>Setup</h2>
+
+  <code class="t-hidden">docs-aside</code>
+
+  <section white>
+    <div class="flex m-list">
+      <div class="col center list">
+        <h4 class="text-center">Introduction</h4>
+        <p>
+          Get started with Minima, the light-weight CSS library that provides modern responsive designs with basic HTML. Minima styles the html elements directly without having to memorize a class for each.
+        </p>
+      </div>
+      <div class="col flex list">
+        <div class="col">
+          <h6><a href="#/elements">Elements</a></h6>
+          <span>
+            Check out the elements page to see how Minima renders different elements
+          </span>
+        </div>
+        <div class="col">
+          <h6><a href="#/components">Components</a></h6>
+          <span>
+            Components add light quirky widgets providing functionality with minimal work
+          </span>
+        </div>
+        <div class="col">
+          <h6><a href="#/layout">Layout</a></h6>
+          <span>
+            See how Minima handles responsive grids with only a few classes
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="m-hidden">
+
+    <div class="m-hidden">
+      <h4 class="text-center">Import into your projects</h4>
+      <div class="space-even">
+        <button onclick="copy('link')" tabindex="0">
+          HTML link <h6><b>&lt;link/&gt;</b></h6>
+        </button>
+        <button onclick="copy('import')" tabindex="0">
+          CSS import <h6><b>@import</b></h6>
+        </button>
+        <button onclick="copy('code')" tabindex="0">
+          JS import <h6><b>&lt;script&gt;</b></h6>
+        </button>
+      </div>
+      <i class="right">Click to copy to clipboard</i>
+    </div>
+  </section>
+</template>
